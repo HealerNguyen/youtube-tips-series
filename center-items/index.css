@@ -1,0 +1,65 @@
+.way {
+  height: 150px;
+  width: 150px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.container {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  gap: 16px;
+}
+
+/* way one: use flex */
+.way-one {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #4caf50;
+}
+
+/* way two: use grid */
+.way-two {
+  display: grid;
+  place-content: center;
+  background: #f44336;
+}
+
+/* way three: use position & transform */
+.way-three {
+  position: relative;
+  background: #c2807b;
+}
+
+.way-three .children {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* way four: use grid & margin */
+.way-four {
+  display: grid;
+  background: #699908;
+}
+
+.way-four .children {
+  margin: auto;
+}
+
+
+/* way five: use flex & margin */
+.way-five {
+  display: flex;
+  background: #024e53;
+}
+
+.way-five .children {
+  margin: auto;
+  color: white;
+}
